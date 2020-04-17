@@ -1,17 +1,9 @@
-
 import java.awt.*;
 import java.awt.event.*;
-import java.io.*;
-import javax.imageio.ImageIO;
-import java.util.*;
-
-import javax.imageio.ImageIO;
 import javax.swing.*;
-
 
 public class HealthHandMain extends JFrame
 {
-	private Image picture;
 	private CardPanel cp;
 	private JPanel cardPanel;
 	private CardLayout cards;
@@ -94,7 +86,6 @@ public class HealthHandMain extends JFrame
 			{
 				super.paintComponent(g);
 				setBackground(backColor);
-				System.out.println("hellO");
 				g.setFont(new Font("MONOSPACED", Font.ITALIC, 25));
 				g.drawString("An interactive helper for health. Press below to begin.", 75, 460);
 				g.drawImage(frontImg, 0, -50, this);
